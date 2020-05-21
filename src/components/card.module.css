@@ -3,15 +3,15 @@
 }
 
 .card{
+    width: 25em;
     height:18em;
-    margin:2em 4em;
+    margin:2em auto;
     background-color: white;
     border-radius: 0.5em;
     padding: 1em 2em;
     font-size: 0.8em;
     position: relative;
     box-shadow: 0px 3px 30px -13px rgba(0,0,0,0.75);
-
 }
 
 .card>img{
@@ -22,3 +22,4 @@
 .card>p{
     color:var(--GrayishBlue);
 }
+

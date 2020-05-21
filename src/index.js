@@ -13,24 +13,28 @@ const benefits=[
     description:'Monitors activity to identify project roadblocks',
     highLightColor:'hsl(180, 62%, 55%)',
     icon:svg1,
+    id:0,
   },
   {
     title:'Team Builder',
     description:'Scans our talent network to create the optimal team for your proyect',
     highLightColor:'hsl(0, 78%, 62%)',
     icon:svg2,
+    id:1,
   },
   {
     title:'Karma',
     description:'Regularly evaluates our talent to ensure quality',
     highLightColor:'hsl(34, 97%, 64%)',
     icon:svg3,
+    id:2,
   },
   {
     title:'Calculator',
     description:'Uses data from past project to provides better delivery estimates',
     highLightColor:'hsl(212, 86%, 64%)',
     icon:svg4,
+    id:3,
   },
 ]
 
@@ -46,7 +50,7 @@ class Main extends React.Component{
             Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
           </p>
         </div>
-        <div className={Styles.cardSeccion}>
+        <div className={Styles.cardSection}>
           {benefits.map((item)=>{
             return (
               <Card
@@ -54,6 +58,8 @@ class Main extends React.Component{
                 icon={item.icon}
                 description={item.description}
                 highLightColor={item.highLightColor}
+                key={item.id}
+                className={`${Styles.card}`}
               />
             )
           })}

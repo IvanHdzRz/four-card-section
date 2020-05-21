@@ -11,7 +11,7 @@
     font-size: 15px;
 }
 .header{
-    padding: 2em;
+    padding: 1px 2em;
 }
 .titleLight, .titleBold, .header>p{
     text-align: center;
@@ -25,4 +25,42 @@
 }
 .header>p{
     color: var(--GrayishBlue);
+}
+ 
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (min-width:640px){
+    .cardSection{
+        flex-direction: row;
+    }
+    
+}
+@media (min-width:1100px){
+    .cardSection{
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "uno dos cuatro"
+        "uno tres cuatro"
+     ;
+    }
+    .cardSection :nth-child(1){
+        grid-area:uno;
+    }
+    .cardSection :nth-child(2){
+        grid-area: dos;
+    }
+    .cardSection :nth-child(3){
+        grid-area:tres;
+    }
+    .cardSection :nth-child(4){
+        grid-area: cuatro;
+    }
 }
