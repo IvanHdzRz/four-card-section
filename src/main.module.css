@@ -1,0 +1,28 @@
+:root{
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+}
+.main{
+    font-family: 'Poppins', sans-serif;
+    color: var(--VeryDarkBlue);
+    min-height: 100vh;
+    background-color: var(--VeryLightGray);
+    font-size: 15px;
+}
+.header{
+    padding: 2em;
+}
+.titleLight, .titleBold, .header>p{
+    text-align: center;
+}
+.titleLight{
+    font-weight: 200;
+    
+}
+.titleBold{
+    font-weight: 600;
+}
+.header>p{
+    color: var(--GrayishBlue);
+}
